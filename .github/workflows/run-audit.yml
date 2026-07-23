@@ -1,0 +1,46 @@
+name: Run Jira Audit
+
+on:
+  workflow_dispatch:
+    inputs:
+      project_key:
+        description: "Jira project key to audit"
+        required: false
+        default: "INFSOC"
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Jira Functional Audit
+        env:
+          JIRA_INSTANCE_URL: ${{ secrets.JIRA_INSTANCE_URL }}
+          JIRA_USER_EMAIL: ${{ secrets.JIRA_USER_EMAIL }}
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+          JIRA_PROJECT_KEY: ${{ github.event.inputs.project_key }}
+        run: python src/audit.py
+
+      - name: Upload Audit Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jira-audit-report-${{ github.run_number }}
+          path: |
+            reports/audit_report.json
+            reports/audit_report.md
+
+      - name: Upload Logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-logs-${{ github.run_number }}
+          path: logs/
