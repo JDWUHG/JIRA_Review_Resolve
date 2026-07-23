@@ -1,0 +1,197 @@
+{
+  "issue_counts": {
+    "total": 0
+  },
+  "classification_values": {
+    "customfield_10252": {
+      "name": "Source",
+      "values": [
+        "Email",
+        "Phone",
+        "Monitoring systems",
+        "Vendor/technical advisory",
+        "Customer",
+        "Other"
+      ],
+      "from_type": "10531"
+    },
+    "customfield_10275": {
+      "name": "Closure code",
+      "values": [
+        "True-positive - 3rd party error",
+        "True-positive - Human error (Internal)",
+        "True-positive - Malicious activity (Internal)",
+        "True-positive - Malicious activity (External)",
+        "True-positive - Misconfiguration",
+        "True-Positive - Phishing email",
+        "True-positive - Physical damage (Accidental)",
+        "True-positive - Physical damage (Malicious)",
+        "True-positive - System Fault",
+        "True-positive - Reconnaissance",
+        "True-positive - Unauthorized access",
+        "False-positive - 3rd party error",
+        "False-positive - Human error (Internal)",
+        "False-positive - Misconfiguration",
+        "False-Positive - Penetration testing",
+        "False-Positive - Phishing email (Misreported)",
+        "False-Positive - Phishing email (Training)",
+        "False-positive - Scanning (External)",
+        "False-positive - Scanning (Internal)",
+        "False-positive - System fault",
+        "False-positive - Unauthorized access",
+        "Escalated to SIR",
+        "Escalated to SLT",
+        "Zscaler exception created ",
+        "Request fulfilled ",
+        "Request declined",
+        "Triaged",
+        "Cancelled by customer",
+        "Security Approval - Approved",
+        "Security approval - Rejected",
+        "Vulnerability Not Present",
+        "True-positive - DLP",
+        "False-positive - DLP",
+        "IOC Blocked",
+        "IOC Investigated - No threat found",
+        "IOC Confirmed - Threat Mitigated",
+        "IOC Action Update Complete",
+        "IOI Review - False Positive ",
+        "IOI Review True Positive ",
+        "Month End QA",
+        "General Analyst Request ",
+        "BAU Activity ",
+        "Vulnerability / Threat not Present ",
+        "Informational - No action required ",
+        "DLP"
+      ],
+      "from_type": "10531"
+    },
+    "customfield_10288": {
+      "name": "SOC categorisation",
+      "values": [
+        "Alert - AWS IaaS",
+        "Alert - CrowdStrike",
+        "Alert - Darktrace",
+        "Alert - Incident Report",
+        "Alert - Office 365 DLP",
+        "Alert - Phishing Simulation",
+        "Alert - Secureworks",
+        "Alert - Sentinel",
+        "Alert - Suspect Email",
+        "Alert - SIEM",
+        "Alert - Vulnerability",
+        "Alert - Zscaler",
+        "Alert - PaNDA (ESRO)",
+        "Request - Antigena email release",
+        "Request - Device Isolated",
+        "Request - Tuning Request",
+        "Request - Report, Export or Dashboard Request",
+        "Request - Security Approval",
+        "Request - Security Tool Access",
+        "Request - Training",
+        "Request - Vulnerability Reports",
+        "Azure - User at risk",
+        "Feed Activity Check",
+        "Vulnerability Advisory",
+        "Jira Testing",
+        "Request - Tenable/Nessus",
+        "Alert - DLP",
+        "Optum Advisory"
+      ],
+      "from_type": "10531"
+    },
+    "customfield_10301": {
+      "name": "Purple Testing",
+      "values": [
+        "Yes",
+        "No",
+        "Yes - Nmap",
+        "Yes - DDoS"
+      ],
+      "from_type": "10531"
+    },
+    "customfield_10398": {
+      "name": "Referred To (Group)",
+      "values": [
+        "Crowdstrike",
+        "Cyberfort",
+        "Darktrace",
+        "Group IT",
+        "Group Security",
+        "Hosted Networks",
+        "Hosted Platforms"
+      ],
+      "from_type": "10531"
+    },
+    "customfield_10399": {
+      "name": "SIR Logged?",
+      "values": [
+        "Yes"
+      ],
+      "from_type": "10531"
+    },
+    "customfield_10242": {
+      "name": "Urgency",
+      "values": [
+        "Critical",
+        "High",
+        "Medium",
+        "Low"
+      ],
+      "from_type": "10534"
+    },
+    "customfield_10243": {
+      "name": "Impact",
+      "values": [
+        "Extensive / Widespread",
+        "Significant / Large",
+        "Moderate / Limited",
+        "Minor / Localized"
+      ],
+      "from_type": "10534"
+    },
+    "customfield_10244": {
+      "name": "Pending reason",
+      "values": [
+        "More info required",
+        "Awaiting approval",
+        "Waiting on vendor",
+        "Pending on change request"
+      ],
+      "from_type": "10534"
+    },
+    "customfield_10245": {
+      "name": "Product categorization",
+      "values": [
+        "Communication",
+        "Document",
+        "People",
+        "Service",
+        "Software",
+        "Hardware - Component",
+        "Hardware - CPD",
+        "Hardware - Disc",
+        "Hardware - Peripheral",
+        "Hardware - Process Equipment",
+        "Hardware - Power",
+        "Hardware - Tape",
+        "Hardware - Virtual",
+        "InfoSec - Approvals",
+        "InfoSec - Access",
+        "InfoSec - Tenable Report"
+      ],
+      "from_type": "10534"
+    },
+    "customfield_10360": {
+      "name": "Security Tool",
+      "values": [
+        "Darktrace ",
+        "Crowdstrike ",
+        "Tenable SC",
+        "Tenable IO ",
+        "Other  "
+      ],
+      "from_type": "10550"
+    }
+  }
+}
