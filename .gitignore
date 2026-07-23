@@ -26,9 +26,7 @@ env/
 .DS_Store
 Thumbs.db
 
-# Reports (keep structure, ignore generated output)
-reports/*.json
-reports/*.md
+# Reports (keep structure, track output for review)
 !reports/.gitkeep
 
 # Logs
